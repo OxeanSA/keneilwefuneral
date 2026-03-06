@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keneilwe Funeral Parlour | Send-off With Dignity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap');
+        
+        :root {
+            --brand-gold: #D4AF37;
+            --brand-dark: #1A1A1A;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        h1, h2, h3, h4, .serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .gold-text { color: var(--brand-gold); }
+        .bg-gold { background-color: var(--brand-gold); }
+        .border-gold { border-color: var(--brand-gold); }
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1516567727245-ad8c68f3ec93?auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .package-card {
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
+        }
+
+        .package-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--brand-gold);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50">
+
+    <!-- Emergency Top Bar 
+    <div class="bg-black text-white py-2 px-6 md:px-12 flex justify-between items-center text-xs tracking-widest uppercase">
+        <div class="flex space-x-4">
+            <span>Bloemfontein Branch</span>
+            <span class="hidden md:inline">|</span>
+            <span class="hidden md:inline">11 Enterprise, Hamilton, Bloemfontein</span>
+        </div>
+        <div class="font-bold text-[#D4AF37]">
+            079 566 7643
+        </div>
+    </div>
+    -->
+    <!-- Navigation -->
+    <nav class="bg-white py-6 px-6 md:px-12 flex justify-between items-center shadow-sm sticky top-0 z-50">
+        <div class="flex flex-col">
+            <span class="text-xl md:text-2xl font-bold tracking-widest text-black uppercase leading-none">Keneilwe <span class="text-[#D4AF37]">Funeral</span></span>
+            <span class="text-[10px] tracking-[0.4em] uppercase text-gray-500 font-semibold mt-1">Parlour</span>
+        </div>
+        <div class="hidden lg:flex space-x-8 font-medium text-[11px] uppercase tracking-widest items-center">
+            <a href="#" class="hover:text-[#D4AF37] transition">Home</a>
+            <a href="#packages" class="hover:text-[#D4AF37] transition">Packages</a>
+            <a href="#" class="hover:text-[#D4AF37] transition">Policies</a>
+            <a href="#" class="hover:text-[#D4AF37] transition">Repatriation</a>
+            <a href="tel:0843084862" class="bg-black text-white px-6 py-3 rounded-sm hover:bg-[#D4AF37] transition duration-300">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-section h-[75vh] flex items-center justify-center text-center text-white px-6">
+        <div class="max-w-4xl">
+            <div class="mb-4 inline-block px-4 py-1 border border-[#D4AF37] text-[#D4AF37] text-xs uppercase tracking-[0.3em]">Established Excellence</div>
+            <h1 class="text-5xl md:text-7xl mb-6">Send-off With Dignity.</h1>
+            <p class="text-lg md:text-xl font-light mb-10 opacity-80 italic max-w-2xl mx-auto">Providing compassionate care and professional service to honor the legacy of your loved ones.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#packages" class="bg-[#D4AF37] text-white px-10 py-4 text-sm font-bold uppercase tracking-widest">View Our Plans</a>
+                <button class="border border-white/30 backdrop-blur-sm px-10 py-4 text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-black transition">Get a Policy</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80" alt="Parlour" class="rounded-sm shadow-xl">
+            </div>
+            <div>
+                <h2 class="text-4xl mb-6">A Legacy of Trust</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">Keneilwe Funeral Parlour is dedicated to providing high-quality, dignified services to the community of Bloemfontein and beyond. We understand that saying goodbye is never easy, which is why we handle every detail with the utmost respect.</p>
+                <ul class="space-y-3 text-sm font-semibold uppercase tracking-wider">
+                    <li class="flex items-center"><span class="w-6 h-px bg-[#D4AF37] mr-4"></span> Professional Repatriation</li>
+                    <li class="flex items-center"><span class="w-6 h-px bg-[#D4AF37] mr-4"></span> Affordable Monthly Premiums</li>
+                    <li class="flex items-center"><span class="w-6 h-px bg-[#D4AF37] mr-4"></span> 24/7 Support</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages -->
+    <section id="packages" class="py-20 px-6 bg-slate-50">
+        <div class="text-center mb-16">
+            <span class="text-[#D4AF37] uppercase tracking-[0.4em] text-xs font-bold block mb-2">Honorable Options</span>
+            <h2 class="text-4xl">Service Packages</h2>
+        </div>
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-6">
+            <!-- Option A -->
+            <div class="package-card bg-white p-8 text-center">
+                <h4 class="text-gray-400 uppercase tracking-widest text-xs mb-2">Option A</h4>
+                <div class="text-3xl font-bold mb-4">R12 500</div>
+                <div class="h-px bg-gray-100 w-full mb-6"></div>
+                <ul class="text-sm text-gray-500 space-y-3 mb-8 text-left">
+                    <li>• Standard Coffin</li>
+                    <li>• Collection & Storage</li>
+                    <li>• Administration Included</li>
+                    <li>• Hearse & 2 Family Cars</li>
+                    <li>• 30x Programmes</li>
+                </ul>
+                <button class="w-full py-3 border border-black text-xs font-bold uppercase tracking-widest hover:bg-black hover:text-white transition">Select Plan</button>
+            </div>
+            <!-- Option B -->
+            <div class="package-card bg-white p-8 text-center border-t-4 border-t-[#D4AF37]">
+                <h4 class="text-gray-400 uppercase tracking-widest text-xs mb-2">Option B</h4>
+                <div class="text-3xl font-bold mb-4">R15 000</div>
+                <div class="h-px bg-gray-100 w-full mb-6"></div>
+                <ul class="text-sm text-gray-500 space-y-3 mb-8 text-left">
+                    <li>• Standard Coffin</li>
+                    <li>• Collection & Storage</li>
+                    <li>• Hearse & 2 Family Cars</li>
+                    <li>• 40x Programmes</li>
+                    <li>• Tent & Chairs Included</li>
+                </ul>
+                <button class="w-full py-3 bg-black text-white text-xs font-bold uppercase tracking-widest hover:bg-[#D4AF37] transition">Most Popular</button>
+            </div>
+            <!-- Option C -->
+            <div class="package-card bg-white p-8 text-center">
+                <h4 class="text-gray-400 uppercase tracking-widest text-xs mb-2">Option C</h4>
+                <div class="text-3xl font-bold mb-4">R22 500</div>
+                <div class="h-px bg-gray-100 w-full mb-6"></div>
+                <ul class="text-sm text-gray-500 space-y-3 mb-8 text-left">
+                    <li>• Premium Casket</li>
+                    <li>• Collection & Storage</li>
+                    <li>• Hearse & 2 Family Cars</li>
+                    <li>• 50x Programmes</li>
+                    <li>• Graveside Head & Base</li>
+                </ul>
+                <button class="w-full py-3 border border-black text-xs font-bold uppercase tracking-widest hover:bg-black hover:text-white transition">Select Plan</button>
+            </div>
+            <!-- Option D -->
+            <div class="package-card bg-white p-8 text-center">
+                <h4 class="text-gray-400 uppercase tracking-widest text-xs mb-2">Option D</h4>
+                <div class="text-3xl font-bold mb-4">R45 000</div>
+                <div class="h-px bg-gray-100 w-full mb-6"></div>
+                <ul class="text-sm text-gray-500 space-y-3 mb-8 text-left">
+                    <li>• Dome Casket</li>
+                    <li>• Full Collection & Storage</li>
+                    <li>• Hearse & 2 Family Cars</li>
+                    <li>• 50x Programmes</li>
+                    <li>• Full Tent & Chairs Setup</li>
+                </ul>
+                <button class="w-full py-3 border border-black text-xs font-bold uppercase tracking-widest hover:bg-black hover:text-white transition">Select Plan</button>
+            </div>
+        </div>
+        <p class="text-center mt-12 text-xs text-gray-400 italic">NB: Services rendered out of 30km Radius will add transportation cost.</p>
+    </section>
+
+    <!-- Terms and Conditions -->
+    <section class="py-16 bg-black text-white px-6">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-2xl mb-8 text-[#D4AF37] font-bold tracking-widest uppercase text-center">Terms & Conditions</h3>
+            <div class="grid md:grid-cols-2 gap-8 text-sm">
+                <div class="border-l border-[#D4AF37] pl-6">
+                    <p class="font-bold uppercase mb-2">Waiting Periods</p>
+                    <p class="text-gray-400">6 Months waiting period on Natural Death.<br>12 Months waiting period on Suicide.</p>
+                </div>
+                <div class="border-l border-[#D4AF37] pl-6">
+                    <p class="font-bold uppercase mb-2">Joining & Premiums</p>
+                    <p class="text-gray-400">Joining fee of R100 required.<br>Cover commences on receipt of first premium.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white pt-20 pb-10 px-6 border-t">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 mb-16">
+            <div>
+                <div class="text-2xl font-bold tracking-tighter mb-4 uppercase">Keneilwe <span class="text-[#D4AF37]">Funeral</span></div>
+                <p class="text-gray-500 text-sm leading-relaxed">Honoring memories with dignity and grace. Your trusted partner in funeral service excellence across the Free State.</p>
+            </div>
+            <div>
+                <h5 class="font-bold text-xs uppercase tracking-widest mb-6">Contact Information</h5>
+                <ul class="text-sm text-gray-500 space-y-3">
+                    <li><strong>Phone:</strong> 084 308 4862</li>
+                    <li><strong>Emergency:</strong> 079 566 7643</li>
+                    <li><strong>Email:</strong> help@keneilwefuneral.co.za</li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold text-xs uppercase tracking-widest mb-6">Location</h5>
+                <p class="text-sm text-gray-500">11 Enterprise, Piet Human<br>Hamilton, Bloemfontein<br>9301</p>
+            </div>
+        </div>
+        <div class="text-center text-[10px] text-gray-400 uppercase tracking-[0.3em] pt-10 border-t">
+            © 2026 Keneilwe Funeral Parlour. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
